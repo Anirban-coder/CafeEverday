@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./images/360_F_1030072909_Q6XBPSEzTAc3pkDnd6QFXfCibVaFTACy.jpg'); /* Replace with your image path */
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-color:  rgba(255, 255, 255, 0.038);
+    overflow-x: hidden; /* Prevent scrolling */
+     
+    }
+    body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5); 
+        z-index: -5; 
+    }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: #493212; 
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #493212;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.navbar .logo img {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: auto;
+    flex-grow: 1;
+}
+
+.navbar .nav-links a {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration-color: rgb(94, 55, 18);
+    text-decoration: underline;
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+}
+
+.active{
+    background-color: #251602; /* Darker shade on hover */
+    color: #e07ca1; /* White text color for active link */
+    text-decoration: underline ;
+    text-decoration-color: rgba(59, 25, 3, 0.837); /* Underline for active link */
+    transition: background-color 0.8s ease; /* Smooth transition */
+    
+}
+.hero {
+    background-image: url('./images/coffee-beans-hot-cup-coffee-bag-wallpaper-preview.jpg'); 
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align the text and button */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.hero .btn {
+    background-color: #745935;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #493212;
+}
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 50px 0;
+    color: #493212; /* Dark brown color for the title */
+    font-family: 'Courier New', Courier, monospace; 
+}
+title:hover {
+    background-color: #a16106b0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration-color:rgb(rgba(68, 45, 26, 0.794), green, blue);
+    font-size: 1.2rem;
+    border-radius:30 px;
+    transition: background-color 0.3s ease;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    padding: 50px 20px; /* Padding around the card container */
+}
+.typing-effect {
+    border-right: 2px solid #493212; /* Blinking cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #493212;
+    }
+}
+.container {
+    max-width: 100%; /* Prevent it from exceeding the viewport width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding without causing overflow */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Fixed width for cards */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin: 30px; /* Smooth scaling effect */
+}
+
+.card.img {
+    width: 100%; /* Adjust the width to fit the card */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-height: 15px; /* Limit the maximum height of the image */
+    object-fit: cover;
+    padding: 200px;
+    transition: transform 1.0s ease, box-shadow 0.5s ease;
+    /* Rounded corners for the top */
+}
+.card img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Add a shadow for emphasis */
+     /* Scale up on hover */
+}
+.card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #493212; /* Dark brown color for the title */
+    font-family: 'Courier New', Courier, monospace; 
+}
+.content{
+    font-size: 1.2rem;
+    color: #493212; /* Dark brown color for the content */
+    font-family: 'Courier New', Courier, monospace; 
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 70px;
+    background-color: #fff; /* White background for content */
+    border-radius: 10px; /* Rounded corners for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for content */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+
+
+}
+.blog-image {
+    width: 400px; /* Ensure the image fits its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s ease; /* Smooth transition for the hover effect */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-height: 450px; /* Limit the maximum height of the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    padding: 20px;
+    transition: transform 1.0s ease, box-shadow 0.5s ease;
+    /* Rounded corners for the top */
+    margin-bottom: 20px; /* Space between image and text */     
+}
+
+.blog-image:hover {
+    filter: brightness(50%); /* Darkens the image by reducing brightness */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between videos */
+    padding: 50px 20px; /* Padding around the video container */
+    margin: 0 auto; /* Center the container */
+}
+.video-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    max-width: 60px; /* Maximum width for larger screens */
+    max-height: 40px; /* Maximum height for larger screens */
+    border-radius: 100px; /* Rounded corners for videos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for videos */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.video-section {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the video */
+    align-items: center; /* Vertically center the video (if needed) */
+    padding: 20px; /* Add padding around the video */
+    background-color: #f4f4f400; /* Optional: Add a background color */
+}
+
+.video-section video {
+    width: 80%; /* Adjust the width of the video */
+    max-width: 800px; /* Limit the maximum width */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+}
+.video-container iframe:hover {
+    transform: scale(1.05); /* Slightly enlarge the video on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for emphasis */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Add a shadow for emphasis */
+}
+.footer {
+    background-color: #493212; /* Dark brown color for the footer */
+    color: white; /* Set text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff; /* White text color for footer */
+}
+.footer a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+.footer a:hover {
+    color: #a16106; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+.social-icons {
+    display: flex; /* Ensure the icons are displayed in a row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Add space between icons */
+    margin-top: 20px; /* Add space above the icons */
+}
+
+.social-icons a {
+    color: #fff; /* Set the icon color */
+    font-size: 24px; /* Set the icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+    color: #a16106; /* Change color on hover */
+}

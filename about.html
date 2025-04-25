@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeEverday</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5e5c5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/pngtree-coffee-logo-design-vector-image_337940.jpg" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="demo.html">Home</a>
+                <a href="About.html" class="active" >About</a>
+                <a href="blog.html">Blog</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="typing-effect" id="typing-paragraph">Easy Cold Brewed <br>Coffee for Coffee Lovers!</h1>
+                <p>Discover the art of cold brewing with our easy-to-follow guide. Enjoy smooth, rich coffee at home.</p>
+                <a href="blog.html" class="btn">Get Started</a>
+            </div>
+        </div>
+        <div class="title">
+            <h2 >Welcome to Our Coffee World</h2>
+            <p class="typing-effect" id="typing-paragraph">Join us on a journey to explore the best cold brew coffee recipes and tips.</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="../images/9eada0d203bfb580d801b478edd553465c7afb52-transformed.jpeg" alt="Coffee 1">
+                <h3>Classic Cold Brew</h3>
+                <p>Learn how to make the perfect classic cold brew coffee at home.</p>
+                <a href="#ReadMore" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <img src="../images/shaken-espresso-maple-latte-square-transformed.jpeg" alt="Coffee 2">
+                <h3>iced espresso </h3>
+                <p>Try our delicious vanilla cold brew recipe for a sweet twist.</p>
+                <a href="#ReadMore" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <img src="../images/cold-brew-iced-mocha-transformed.webp" alt="Coffee 3">
+                <h3>Mocha Cold Brew</h3>
+                <p>Indulge in a rich mocha cold brew that will satisfy your chocolate cravings.</p>
+                <a classhref="#ReadMore" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <img src="../images/Homemade-Frappuccino-H1-transformed.jpeg" alt="Coffee 4">
+                <h3>Spiced Cold Brew</h3>
+                <p>Add a kick to your cold brew with our spiced cold brew recipe.</p>
+                <a href="#ReadMore" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <img src="../images/9eada0d203bfb580d801b478edd553465c7afb52-transformed.jpeg" alt="Coffee 5">
+                <h3>Fruit-Infused Cold Brew</h3>
+                <p>Explore the refreshing flavors of fruit-infused cold brew coffee.</p>
+                <a href="#ReadMore" class="btn">Read More</a>
+            </div>
+        </div>                
+        
+        <div class="section" id="blog">
+            <div class="content">
+                <h1><i class="fas fa-blog"></i> Welcome to Our Coffee Blog</h1>
+                <h2>
+                    <i class="fas fa-quote-left"></i> Hi guys! So today I wanted to talk about a latest trend for all the coffee                 lovers out there which, <br>
+                     I think is a must try. I, personally, am a coffee                 lover and I would choose coffee to tea any day. <br>
+                     I have a love for strong                 coffee beverages, so recently, <br>
+                     I tried this cold coffee beverage which                 was a Vegan Cold Brewed Coffee and I must say I absolutely loved it. <i class="fas fa-quote-right"></i>
+                </h2>
+                <img src="../images/flat-white-3402c4f.jpg" alt="Blog Image" class="blog-image" onclick="">
+                <p>In this blog, I will be sharing the recipe of this amazing drink with you all. <br>
+            <h3 class="headingText " id="typin-paragraph">By the way just forgot to say you that thee coffee is already ready scrole down to see</h3>
+            </div>
+            
+        </div>    
+        <div class="video-section">
+            <video id="coffee-video" poster="../images/46989-449623829_small.mp4" controls>
+                <source src="../images/46989-449623829_small.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 Coffee Lovers. All rights reserved.</p>
+            <p>Follow us on our social media channels for the latest updates!</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <script src="coffee.js">
+            // JavaScript code to handle video play/pause functionality
+            const video = document.getElementById('coffee-video');
+            const playButton = document.querySelector('.play-button i');
+
+            function togglePlay() {
+                if (video.paused) {
+                    video.play();
+                    playButton.classList.remove('fa-play');
+                    playButton.classList.add('fa-pause');
+                } else {
+                    video.pause();
+                    playButton.classList.remove('fa-pause');
+                    playButton.classList.add('fa-play');
+                }
+            }
+        </script>
+    </body>
+</body>
+</html>
